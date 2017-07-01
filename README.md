@@ -10,15 +10,15 @@
 
 	**./main ra**
 ------------------------------
-	>ra	
-	>raw
-	>rawer
-	>raws
-	>ras
-	>rase	
-	>raser	
-	>rases	
-	>rased	
-	>rasa
+	ra	
+	raw
+	rawer
+	raws
+	ras
+	rase	
+	raser	
+	rases	
+	rased	
+	rasa
 
 	countwords 10 
