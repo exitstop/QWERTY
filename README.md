@@ -8,11 +8,11 @@
 5. Добавляем Index каждого найденного уникального слова в массив индексов.
 6. Выводим результат на экран, все слова не попадающие под маску Соседствующих букв уже отброшены.
 
-	**./main ra**               **./main des**
+	**./main ra**
 ------------------------------
-	ra							des
-	raw 						desert
-	rawer						desde
+	ra	
+	raw
+	rawer
 	raws
 	ras
 	rase	
@@ -21,6 +21,14 @@
 	rased	
 	rasa
 
-	countwords 10  				CountWords 3 
+	countwords 10 
 
 
+
+	**/main des**
+------------------------
+	des
+	desert
+	desde
+
+	CountWords 3 
