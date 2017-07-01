@@ -8,20 +8,35 @@
 5. Добавляем Index каждого найденного уникального слова в массив индексов.
 6. Выводим результат на экран, все слова не попадающие под маску Соседствующих букв уже отброшены.
 
-**./main ra**
-------------------------------
-	ra	
-	raw
-	rawer
-	raws
-	ras
-	rase	
-	raser	
-	rases	
-	rased	
-	rasa
 
-	countwords 10 
+**./main re**
+------------------------------
+	re
+	rew
+	rewed
+	reweds
+	rere
+	res
+	rese
+	resew
+	resewed
+	resews
+	resa
+	resaw
+	resawer
+	resawed
+	resaws
+	red
+	rede
+	redes
+	redesert
+	reded
+	redrew
+	reds
+
+------------------------------- 
+CountWords 22 
+
 
 -------------
 
