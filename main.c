@@ -169,7 +169,7 @@ int main (int argc, char **argv[])
     for(int i = 0; i < strlen(ar)-1; i++){        
         char ch[2];
         ch[0] = (char)ar[i];
-        if(compare(ch[0],ar[i+1])!=1){ printf("Введена не верная последовательность букв");}        
+        if(compare(ch[0],ar[i+1])!=1){ printf("Введена не верная последовательность букв"); exit(0); }        
     }
 
     recursion(0, 466549, (char *)argv[1], -1, (int)strlen((const char *)argv[1]));
