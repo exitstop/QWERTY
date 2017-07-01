@@ -34,8 +34,7 @@
 	redrew
 	reds
 
-------------------------------- 
-CountWords 22 
+	CountWords 22 
 
 
 -------------
