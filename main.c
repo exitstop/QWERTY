@@ -22,6 +22,19 @@ char ArrayBuffer[466549][51];
 int HashArray[MAXHASHARRAY];
 int CountHash = 0;
 
+
+char compare(char chB, char chNext){
+    char ch[2];
+    for(int i = 0; i < qw[chB-97].coll; i++ ){
+        
+        ch[0] = (char)qw[chB-97].around[i];
+        if(chNext==qw[chB-97].around[i]){
+            return 1;
+        }
+    }
+    return 0;
+}
+
 /*Создаем массив в который будем добавлять только те элементы которых он еще не содержит*/
 char includeInHash(int CX){
     for(int mHash = 0; mHash < CountHash; mHash++){
@@ -74,6 +87,10 @@ int recursion(int start, int end, char *chBais, int baisArray, int size){
 int main (int argc, char **argv[])
 {
     if(argc < 2){ exit(0); }
+    
+
+    printf("---\n");
+
     int descriptor = open("WordEnglisSortUniq.txt", O_RDONLY);  // ЗдесьХранитсяОтсортированный Список Английских слов без поторейни
     FILE *file = fdopen(descriptor, "rb");
     int x=0;
@@ -148,7 +165,12 @@ int main (int argc, char **argv[])
         }      
     }
 
-
+    char *ar = (char *)argv[1];
+    for(int i = 0; i < strlen(ar)-1; i++){        
+        char ch[2];
+        ch[0] = (char)ar[i];
+        if(compare(ch[0],ar[i+1])!=1){ printf("Введена не верная последовательность букв");}        
+    }
 
     recursion(0, 466549, (char *)argv[1], -1, (int)strlen((const char *)argv[1]));
 
