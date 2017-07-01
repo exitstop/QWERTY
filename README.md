@@ -10,15 +10,15 @@
 
 	gcc -o main main.c
 
-ra
+ra	
 raw
 rawer
 raws
 ras
-rase
-raser
-rases
-rased
+rase	
+raser	
+rases	
+rased	
 rasa
 
 CountWords 10 
