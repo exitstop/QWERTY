@@ -10,10 +10,10 @@
 
 	./main ra
 
-1. ra	
-2. raw
-3. rawer
-4. raws
+ ra	
+raw
+ rawer
+raws
 ras
 rase	
 raser	
