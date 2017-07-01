@@ -8,9 +8,6 @@
 
        
 
-char strvalues[][20] = {"some","example","strings","here"};
-
-
 struct QW{
     char sumbl;
     short coll;
@@ -163,7 +160,7 @@ int main (int argc, char **argv[])
     printf("\n------------------------------- \n");
     printf("CountWords %d \n", CountHash);
 
-    
+
 
 
 
