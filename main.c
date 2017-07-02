@@ -45,7 +45,7 @@ char includeInHash(int CX){
     return 1;
 }
 
-/* Здесь рекурсивынй поиск */
+/* Здесь рекурсивный поиск */
 int recursion(int start, int end, char *chBais, int baisArray, int size){
     int result = 0;
     int localEnd = 0;
@@ -91,7 +91,7 @@ int main (int argc, char **argv[])
 
     printf("---\n");
 
-    int descriptor = open("WordEnglisSortUniq.txt", O_RDONLY);  // ЗдесьХранитсяОтсортированный Список Английских слов без поторейни
+    int descriptor = open("WordEnglisSortUniq.txt", O_RDONLY);  // ЗдесьХранитсяОтсортированный Список Английских слов без повторений
     FILE *file = fdopen(descriptor, "rb");
     int x=0;
     while(fgets (ArrayBuffer[x++], 50, file) != NULL){}
@@ -104,13 +104,12 @@ int main (int argc, char **argv[])
         qw[i].coll = 0;
     }
 
-    /*Так выглядитт qwerty клавиатура*/
+    /*Так выглядит qwerty клавиатура*/
     char qwerty[3][10]={"qwertyuiop","asdfghjkl-","zxcvbnm---"};  
     char ch[2];
 
     int alpha=0;
-
-    /* Привязываем к каждой букве из QWERTY-клавиатуры, её соседей и размещаем все в алфафитном порядке*/
+    /* Привязываем к каждой букве из QWERTY-клавиатуры, её соседей и размещаем все в алфавитном порядке*/
     for(int line = 0; line < 3; line++){        
         for(int sumb = 0; sumb < 10; sumb++){
             if( (alpha) >= 26) { break; }
